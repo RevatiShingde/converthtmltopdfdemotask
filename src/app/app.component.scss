@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  width: 100%;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 10px 0;
+  height: 95px;
+}
+
+img{
+  background-repeat: no-repeat;
+  height: 300px;
+  object-fit: cover;
+  background-position: center;
+}
+
+.content {
+  margin-top: 60px; 
+  margin-bottom: 60px;
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
