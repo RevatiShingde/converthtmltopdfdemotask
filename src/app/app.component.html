@@ -1,6 +1,6 @@
 <div id="pdf-content">
   <header>
-    <h2 style="font-weight: bold; font-style: italic; color: blue">psm Tech</h2>
+    <h2 class="company-logo">PSM TECH</h2>
   </header>
 
   <div class="content">
@@ -21,13 +21,15 @@
     <table class="page">
       <thead>
         <tr>
-          <th>Column 1</th>
-          <th>Column 2</th>
+          <th>employeeId</th>
+          <th>employeeName</th>
+          <th>employeeEmail</th>
+          <th>Contact</th>
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let emp of employeeData">
-          <td>{{ emp.id }}</td>
+        <tr *ngFor="let emp of employeeData; let i = index">
+          <td>{{ i+1 }}</td>
           <td>{{ emp.name }}</td>
           <td>{{ emp.email }}</td>
           <td>{{ emp.mobileNum }}</td>
@@ -38,12 +40,14 @@
     <table class="page">
       <thead>
         <tr>
-          <th>Column 1</th>
-          <th>Column 2</th>
+          <th>employeeId</th>
+          <th>employeeName</th>
+          <th>employeeEmail</th>
+          <th>Contact</th>
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let emp of employeeData">
+        <tr *ngFor="let emp of employeeData; let i = index">
           <td>{{ emp.id }}</td>
           <td>{{ emp.name }}</td>
           <td>{{ emp.email }}</td>
@@ -57,7 +61,7 @@
   </div>
 
   <footer>
-    <p style="color: blue">© 2024 Your Company Name. All rights reserved.</p>
+    <p class="footer-text">© 2024 Your Company Name. All rights reserved.</p>
   </footer>
 </div>
 <button (click)="generatePDF()">Generate PDF</button>
